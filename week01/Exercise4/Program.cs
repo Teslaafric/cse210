@@ -24,10 +24,7 @@ class Program
             {
                 myNumbers.Add(number);
             }
-            else
-            {
-                number = 0;
-            }
+            
           
         }
         foreach (int item in myNumbers)
@@ -60,7 +57,15 @@ class Program
         // int count = myNumbers.Count;
         Console.WriteLine($"The average number: {average}");
         Console.WriteLine($"The largest number: {maxNumber}");
-        Console.WriteLine($"The smallest positive number: {minPositive}");
+        
+        if (minPositive == int.MaxValue)
+        {
+            Console.WriteLine("There are no positive numbers.");
+        }
+        else
+        {
+            Console.WriteLine($"The smallest positive number: {minPositive}");
+        }
 
         myNumbers.Sort();
 
