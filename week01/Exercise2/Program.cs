@@ -61,13 +61,11 @@ class Program
             }
             else if (percentage % 10 >= 3 && percentage != 70)
             {
-                Console.WriteLine("Congratulation! You passed.");
                 letter = "C";
                 character = "";
             }
             else
             {
-                Console.WriteLine("Congratulation! You passed.");
                 letter = "C";
                 character = "-";
             }
