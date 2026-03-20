@@ -1,3 +1,6 @@
+// Added code that keeps track of the user mood, 
+// using a prompt, and a user response.
+
 using System;
 
 class Program
